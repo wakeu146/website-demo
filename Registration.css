@@ -1,0 +1,216 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'inter', sans-serif;
+    background: #2a2636;
+    color: white;
+}
+
+.container{
+    max-width: 900px;
+    display: flex;
+    margin: 50px auto;
+    overflow: hidden;
+    background: #1e1b2c;
+    border-radius: 16px;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+}
+
+/* left panel*/
+.left{
+    flex: 1;
+    background-image: url(IMG-20250702-WA0000.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 10px;
+    border-radius: 5px;
+}
+.logo{
+    font-size: 24px;
+    font-weight: bold;
+}
+.Back{
+    align-self: flex-end;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 14px;
+    position: relative;
+    bottom: 35%;
+}
+.image-text{
+    padding-bottom: 40px;
+    font-size: 18px;
+    position: relative;
+    margin-left: 35%;
+}
+.image-text p{
+    margin-bottom: 20px;
+}
+.dot span{
+    display: inline-block;
+    width: 30px;
+    height: 4px;
+    background-color: #aaa;
+    margin: 3px;
+    border-radius: 3px;
+    position: relative;
+    left: 15px;
+    
+}
+.dot .active{
+    background: white;
+}
+/* right panel*/
+.right{
+    padding: 20px;
+}
+h1 {
+    padding-bottom: 10px;
+    opacity: 0.8;
+}
+.right p {
+    padding-bottom: 10px;
+    font-size: 13px;
+    margin-bottom: 10px;
+    opacity: 0.8;
+}
+form{
+    border: none;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.row{
+    border: none;
+    margin-bottom: 10px;
+}
+.row input{
+    padding: 10px;
+    background-color: #2a2636;
+    border-radius: 5px;
+    color: white;
+}
+input[type = "email"]{
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #2a2636;
+    border-radius: 5px;
+    color: white;
+}
+.password-box{
+    width: 100%;
+    border: none; 
+    overflow: hidden;
+    position: relative;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    border-color: #ccc;
+}
+.password-box input{
+    padding: 10px;
+    border: none;
+    width: 100%;
+    background-color: #2a2636;
+    border-radius: 5px;
+    color: white;
+}
+.eyes-icon{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    right: 10px;
+}
+label{
+    border: none;
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    margin-bottom: 15px;
+}
+label input{
+   margin-right: 6px;
+}
+label span{
+    color: white;
+    font-size: 12px;
+   
+}
+.submit{
+    width: 100%;
+    padding: 10px;
+    color: white;
+    background: linear-gradient(to right, #945ce7, #5e10c5); /* Gradient background */
+    margin-bottom: 10px;
+    border-radius: 5px;
+    opacity: 0.5;
+}
+.submit:hover{
+    opacity: 1;
+}
+.or{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 12px;
+    color: #666;
+    margin-bottom: 10px;
+}
+.or::before, .or::after{
+    content: "";
+    flex: 1;
+    border-bottom: 1px solid #ccc;
+}
+.or::before{
+    margin-right: 10px;
+}
+.or::after{
+    margin-left: 10px;
+}
+.button button{
+    background-color:#1e1b2c ;
+    padding: 10px;
+    width: 50%;
+    border-radius: 5px;
+    color: white;
+    border-color: #ccc;
+    opacity: 0.7;
+}
+.button button:hover{
+    opacity: 1;
+}
+.google{
+    margin-right: 5px;
+}
+.Apple{
+    margin-left: 5px;
+}
+.button{
+    display: flex;
+}
+ img{
+    width: 15px;
+    margin-right: 5px;
+    position: relative;
+    top: 3px;
+}
+a{
+    color: rgb(179, 130, 238);
+    opacity: 0.4;
+}
+a:hover{
+    opacity: 1;
+}

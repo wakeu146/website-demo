@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Create an account Form</title>
+        <link href="Registration.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <div class="left">
+                <div class="logo">AMU</div>
+                <button class="Back">Back to website <span>&rarr;</span></button>
+                <div class="image-text">
+                    <p>Capturing Moments,<br>Creating Memories</p>
+                    <div class="dot">
+                        <span></span><span></span><span class="active"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <form method="POST" action="Registration_Form.php">
+                    <h1>Create an account</h1>
+                    <p>Already have an account? <a href="#">Log in</a></p>
+                    <div class="row">
+                        <input type="text" placeholder="First name" name="First_name" required>
+                        <input type="text" placeholder="Last name" name="Last_name" required>
+                    </div>
+                    <input type="email" placeholder="Email" name="email" required>
+                    <div class="password-box">
+                        <input type="password" id="password" placeholder="Enter your password" name="password" required>
+                        <span class="eyes-icon" onclick="togglePassword()">&#128065;</span>
+                    </div>
+                    <label><input type="checkbox" required ><span>I agree to the <a href="#">Terms & Conditions</a></span></label>
+                    <button type="submit" class="submit">Create account</button>
+                    <div class="or">Or register with</div>
+                    <div class="button">
+                        <button class="google"><img src="google.jpg" alt="google">Google</button>
+                        <button class="Apple"><img src="apple1.png" alt="Apple">Apple</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <script>
+            function togglePassword() {
+                const input = document.getElementById("password");
+               input.type = input.type === "password"?"text":"password";
+            }
+        </script>
+    </body>
+</html>
